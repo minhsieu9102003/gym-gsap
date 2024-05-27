@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            custom: {
+                families: ['monster-extra-light'],
+                urls: ['./style.css']
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="mask">
+        <h6>Xem</h6>
+    </div>
+
+    <div class="navigation">
+        <div class="svg-container">
+            <svg class='left-svg navigation__svg' width="118" height="39" viewBox="0 0 118 39" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M30.251 7.84863C28.8187 6.44889 27.1423 5.38281 25.2217 4.65039C23.3011 3.90169 21.2585 3.52734 19.0938 3.52734C16.8314 3.52734 14.748 3.92611 12.8438 4.72363C10.9557 5.50488 9.31185 6.61979 7.91211 8.06836C6.52865 9.51693 5.45443 11.234 4.68945 13.2197C3.92448 15.1891 3.54199 17.3538 3.54199 19.7139C3.54199 22.0413 3.91634 24.1898 4.66504 26.1592C5.41374 28.1286 6.46354 29.8376 7.81445 31.2861C9.16536 32.7347 10.7604 33.8577 12.5996 34.6553C14.4551 35.4528 16.4814 35.8516 18.6787 35.8516C20.762 35.8516 22.6908 35.4935 24.4648 34.7773C26.2389 34.0612 27.7933 33.0521 29.1279 31.75C30.4788 30.4479 31.5531 28.9017 32.3506 27.1113C33.1481 25.3047 33.6038 23.3353 33.7178 21.2031H19.3867V18.5908H36.623L36.7207 19.7627C36.7207 22.5459 36.2812 25.0931 35.4023 27.4043C34.5234 29.7155 33.2783 31.7174 31.667 33.4102C30.0719 35.1029 28.1758 36.4131 25.9785 37.3408C23.7975 38.2686 21.3968 38.7324 18.7764 38.7324C16.1071 38.7324 13.6413 38.2604 11.3789 37.3164C9.13281 36.3724 7.17155 35.0459 5.49512 33.3369C3.83496 31.6279 2.54102 29.626 1.61328 27.3311C0.701823 25.0199 0.246094 22.5052 0.246094 19.7871C0.246094 17.0365 0.709961 14.4974 1.6377 12.1699C2.58171 9.84245 3.90007 7.81608 5.59277 6.09082C7.28548 4.36556 9.2793 3.03092 11.5742 2.08691C13.8691 1.12663 16.3675 0.646484 19.0693 0.646484C21.6247 0.646484 24.0417 1.08594 26.3203 1.96484C28.6152 2.84375 30.6497 4.10514 32.4238 5.74902L30.251 7.84863ZM49.1426 38H45.9199V22.3506L31.5889 1.37891H35.4951L47.5312 19.5918L59.5918 1.37891H63.498L49.1426 22.375V38ZM97.0625 38H93.8398V5.79785L80.4609 31.8477H77.458L64.1279 5.94434V38H60.9053V1.37891H65.1289L78.9717 28.5029L92.7656 1.37891H97.0625V38ZM117.639 27.0381H108.996V35.8271H106.286V27.0381H97.6436V24.5967H106.286V15.8076H108.996V24.5967H117.639V27.0381Z"
+                    fill="white" />
+            </svg>
+
+            <svg class='left-svg navigation__svg-layer' width="118" height="39" viewBox="0 0 118 39" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M30.251 7.84863C28.8187 6.44889 27.1423 5.38281 25.2217 4.65039C23.3011 3.90169 21.2585 3.52734 19.0938 3.52734C16.8314 3.52734 14.748 3.92611 12.8438 4.72363C10.9557 5.50488 9.31185 6.61979 7.91211 8.06836C6.52865 9.51693 5.45443 11.234 4.68945 13.2197C3.92448 15.1891 3.54199 17.3538 3.54199 19.7139C3.54199 22.0413 3.91634 24.1898 4.66504 26.1592C5.41374 28.1286 6.46354 29.8376 7.81445 31.2861C9.16536 32.7347 10.7604 33.8577 12.5996 34.6553C14.4551 35.4528 16.4814 35.8516 18.6787 35.8516C20.762 35.8516 22.6908 35.4935 24.4648 34.7773C26.2389 34.0612 27.7933 33.0521 29.1279 31.75C30.4788 30.4479 31.5531 28.9017 32.3506 27.1113C33.1481 25.3047 33.6038 23.3353 33.7178 21.2031H19.3867V18.5908H36.623L36.7207 19.7627C36.7207 22.5459 36.2812 25.0931 35.4023 27.4043C34.5234 29.7155 33.2783 31.7174 31.667 33.4102C30.0719 35.1029 28.1758 36.4131 25.9785 37.3408C23.7975 38.2686 21.3968 38.7324 18.7764 38.7324C16.1071 38.7324 13.6413 38.2604 11.3789 37.3164C9.13281 36.3724 7.17155 35.0459 5.49512 33.3369C3.83496 31.6279 2.54102 29.626 1.61328 27.3311C0.701823 25.0199 0.246094 22.5052 0.246094 19.7871C0.246094 17.0365 0.709961 14.4974 1.6377 12.1699C2.58171 9.84245 3.90007 7.81608 5.59277 6.09082C7.28548 4.36556 9.2793 3.03092 11.5742 2.08691C13.8691 1.12663 16.3675 0.646484 19.0693 0.646484C21.6247 0.646484 24.0417 1.08594 26.3203 1.96484C28.6152 2.84375 30.6497 4.10514 32.4238 5.74902L30.251 7.84863ZM49.1426 38H45.9199V22.3506L31.5889 1.37891H35.4951L47.5312 19.5918L59.5918 1.37891H63.498L49.1426 22.375V38ZM97.0625 38H93.8398V5.79785L80.4609 31.8477H77.458L64.1279 5.94434V38H60.9053V1.37891H65.1289L78.9717 28.5029L92.7656 1.37891H97.0625V38ZM117.639 27.0381H108.996V35.8271H106.286V27.0381H97.6436V24.5967H106.286V15.8076H108.996V24.5967H117.639V27.0381Z"
+                    fill="black" />
+            </svg>
+        </div>
+        <ul class="navigation__links">
+            <li class="navigation__link"><a class="top" href="">Lịch tập</a><a class="layer" href="">Lịch tập</a></li>
+            <li class="navigation__link"><a class="top" href="">Thiết bị</a><a class="layer" href="">Thiết bị</a></li>
+            <li class="navigation__link"><a class="top" href="">Coach</a><a class="layer" href="">Coach</a></li>
+            <li class="navigation__link"><a class="top" href="">Ưu đãi</a><a class="layer" href="">Ưu đãi</a></li>
+            <li class="navigation__link"><a class="top" href="">Phòng tập</a><a class="layer" href="">Phòng tập</a>
+            </li>
+            <li class="navigation__link"><a class="top" href="">Gói tập</a><a class="layer" href="">Gói tập</a></li>
+        </ul>
+        <div class="navigation__button-container button-container">
+            <div class="navigation__button-top button-top">
+                <div class="navigation__button-a-container button-a-container">
+                    <a class='navigation__button-a button-a' href="#">Khám phá</a>
+                    <a class='navigation__button-a-layer button-a-layer' href="#">Khám phá</a>
+                </div>
+                <svg class="navigation__button-svg button-svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1024 1024" fill="white">
+                    <path
+                        d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z">
+                    </path>
+                </svg>
+            </div>
+            <div class="navigation__button-layer button-layer">
+                <div class="navigation__button-a-container-layer button-a-container-layer">
+                    <a class='navigation__button-a__layer button-a__layer' href="#">Khám phá</a>
+                    <a class='navigation__button-a-layer__layer button-a-layer__layer' href="#">Khám phá</a>
+                </div>
+                <svg class='navigation__button-svg-layer button-svg-layer' xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1024 1024" fill="black">
+                    <path
+                        d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+
+
+    </div>
+    <section class="main">
+        <div class="left">
+            <div class="marquee-container">
+                <h1 class="marquee-text h11">GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH KHOA
+                    POWER GYM BÁCH
+                    KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER </h1>
+            </div>
+
+            <div class="main-container">
+                <h3>Giải pháp quản lí phòng gym hiệu quả cho start-up trong và ngoài nước, được nhiều doanh nghiệp lớn
+                    hợp
+                    tác phát triển</h3>
+                <div class="main__button-container">
+                    <button class="main__button">
+                        <div class="main__button-box">
+                            <span class="main__button-box-span">Tìm hiểu thêm</span>
+                            <span class="main__button-box-span-layer">Tìm hiểu thêm</span>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9">
+                                <path d="M.603.902h6.808V7.71" stroke="currentColor" stroke-width=".851"></path>
+                                <path d="m4.434 5.157 2.978 2.978 2.979-2.978" stroke="black" stroke-width=".851">
+                                </path>
+                            </svg>
+                        </div>
+
+                    </button>
+                    <button class="main__button-layer">
+                        <div class="main__button-box-layer">
+                            <span class="main__button-box-span-under">Tìm hiểu thêm</span>
+                            <span class="main__button-box-span-under-layer">Tìm hiểu thêm</span>
+                            <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9">
+                                <path d="M.603.902h6.808V7.71" stroke="currentColor" stroke-width=".851"></path>
+                                <path d="m4.434 5.157 2.978 2.978 2.979-2.978" stroke="currentColor"
+                                    stroke-width=".851">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="marquee-container-right  marquee-container">
+                <h1 class="marquee-text h11-right">GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH
+                    KHOA POWER
+                    GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER GYM BÁCH KHOA POWER </h1>
+            </div>
+
+            <a href="https://www.youtube.com/watch?v=RNkpzDaqOpM">
+                <video muted loop autoplay id="video1" class="video1">
+                    <source src="./video.mp4" type="video/mp4">
+                    </source>
+                </video>
+            </a>
+        </div>
+    </section>
+    <section class="second">
+        <h2 class="second__header">
+            Trang web này là nguồn thông tin hàng đầu về các <div class="second__emphasis"><span>khóa tập</span></div>,
+            dịch vụ hỗ
+            trợ, và ưu đãi đặc biệt dành cho hội
+            viên của Gym <div class="second__emphasis"><span>Bách Khoa</span></div>
+        </h2>
+        <div class="second__gym-container">
+            <h2 class="second__gym">Power</h2>
+            <div class="second__gym-button-container button-container">
+                <div class="gym__button-top button-top">
+                    <div class="gym__button-a-container button-a-container">
+                        <a class='gym__button-a button-a' href="#">Xem toàn bộ</a>
+                        <a class='gym__button-a-layer button-a-layer' href="#">Xem toàn bộ</a>
+                    </div>
+                    <svg class="gym__button-svg button-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"
+                        fill="white">
+                        <path
+                            d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="gym__button-layer button-layer">
+                    <div class="gym__button-a-container-layer button-a-container-layer">
+                        <a class='gym__button-a__layer button-a__layer' href="#">Xem toàn bộ</a>
+                        <a class='gym__button-a-layer__layer button-a-layer__layer' href="#">Xem toàn bộ</a>
+                    </div>
+                    <svg class='gym__button-svg-layer button-svg-layer' xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 1024 1024" fill="black">
+                        <path
+                            d="M142.147 472.846 567.912 47.081 520.831 0 20.603 500.228 544.372 1024l47.081-47.086-437.489-437.486h849.431v-66.581H142.148z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="third">
+        <div class="third-scroller">
+            <div class="third__card third__card-1">
+                <div class="third__card-inner third__card-inner-1">
+                    <div class="third__photo third__photo-1">
+                        <div class="third__photo-inner-container">
+                            <div class="third__photo-inner third__photo-inner-dark">Thuận tiện</div>
+                            <div class="third__photo-inner third__photo-inner-light">Sức khỏe</div>
+                            <div class="third__photo-inner third__photo-inner-light">Trí và Tài</div>
+                            <div class="third__photo-inner third__photo-inner-light">Năng lượng</div>
+                        </div>
+
+                    </div>
+                    <div class="third__text">
+                        Truy cập app thể hình dễ dàng: Nâng cao sĩ diện và sức khỏe
+                    </div>
+                </div>
+                <div class="third__card-inner third__card-inner-2">
+                    <div class="third__photo third__photo-2">
+                        <div class="third__photo-inner-container">
+                            <div class="third__photo-inner third__photo-inner-dark">Chiến lược mới</div>
+                            <div class="third__photo-inner third__photo-inner-light">Hiệu quả cao</div>
+                            <div class="third__photo-inner third__photo-inner-light">Mục tiêu rõ ràng</div>
+
+                        </div>
+
+                    </div>
+                    <div class="third__text">
+                        Lập kế hoạch tập luyện: Tối ưu từng bước, thành công từng ngày
+                    </div>
+                </div>
+                <div class="third__card-inner third__card-inner-3">
+                    <div class="third__photo third__photo-3">
+                        <div class="third__photo-inner-container">
+                            <div class="third__photo-inner third__photo-inner-dark">Sức mạnh ẩn giấu</div>
+                            <div class="third__photo-inner third__photo-inner-light">Sáng tạo giới hạn</div>
+
+                        </div>
+
+                    </div>
+                    <div class="third__text">
+                        Họa tiết tập luyện: Sáng tạo không ngừng trong mỗi động tác
+                    </div>
+                </div>
+                <div class="third__card-inner third__card-inner-4">
+                    <div class="third__photo third__photo-4">
+                        <div class="third__photo-inner-container">
+                            <div class="third__photo-inner third__photo-inner-dark">Khởi đầu mới</div>
+                            <div class="third__photo-inner third__photo-inner-light">Tầm nhìn mới</div>
+                            <div class="third__photo-inner third__photo-inner-light">Sự quyết tâm</div>
+
+                        </div>
+
+                    </div>
+                    <div class="third__text">
+                        Dẫn dắt bản thân: Tận hưởng mỗi bước tiến trên hành trình fitness của bạn
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        </div>
+
+    </section>
+    <section class="expand">
+        <div class="expand-card">
+
+        </div>
+        <div class="expand-card">
+
+        </div>
+        <div class="expand-card">
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+    "></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+    <script>
+        const right = document.querySelector('.right')
+        const marqueeText = document.querySelector('.h11');
+        const marqueeTextLayer = document.querySelector('.h11-right');
+
+        const marqueeWidth = marqueeText.offsetWidth;
+        const viewportWidth = window.innerWidth;
+
+        const viewportWidth2 = window.innerWidth;
+
+        // Calculate the total distance to travel
+        const totalDistance = viewportWidth + marqueeWidth;
+
+
+        // Animation timeline for continuous looping
+        const marqueeTl = gsap.timeline({
+            repeat: -1,
+            ease: "none"
+        });
+
+        const marqueeTl2 = gsap.timeline({
+            repeat: -1,
+            ease: "none"
+        });
+
+        // Add the animation to the timeline for the first marquee
+
+        marqueeTl.fromTo(marqueeText,
+            { transform: `translateX(${- marqueeWidth}px)` },
+            { transform: 'translateX(10%)', duration: 50, ease: "linear" })
+
+
+        marqueeTl2.fromTo(marqueeTextLayer,
+            { transform: `translateX(${- marqueeWidth}px)` },
+            { transform: 'translateX(10%)', duration: 50, ease: "linear" })
+
+
+
+        // Add the animation to the timeline for the second marquee
+
+
+
+
+        const mask = document.querySelector('.mask')
+        const maskChild = document.querySelector('.mask-child')
+        const svgTL = gsap.timeline({ default: { ease: 'power4.out', duration: .1 } })
+        const linkTL = gsap.timeline({ default: { ease: 'power4.out', duration: .1 } })
+        window.addEventListener('mousemove', e => {
+
+            const { pageX, pageY, clientX, clientY } = e
+            const x = Math.round(pageX / window.innerWidth * 100)
+            const y = Math.round(pageY / window.innerHeight * 100)
+            const x1 = Math.round(clientX / window.innerWidth * 100)
+            const y1 = Math.round(clientY / window.innerHeight * 100)
+            const posX = clientX + window.scrollX;
+            const posY = clientY + window.scrollY;
+            gsap.to(mask, {
+                x: `${clientX}px`,
+                y: `${clientY - 80}px`,
+                ease: 'sine.out',
+                duration: .1
+            })
+
+
+        })
+        const cursorTL = gsap.timeline({ default: { ease: 'power4.out', duration: .1 } })
+        cursorTL.fromTo(mask, {
+            height: '.3rem',
+            width: '.3rem',
+            backgroundColor: 'black',
+            outline: '1px solid black'
+        }, {
+            height: '7rem',
+            width: '7rem',
+            backgroundColor: 'white',
+            duration: .2,
+            ease: 'power1.inOut',
+            outline: '1px solid transparent'
+        }).to('h6', {
+            opacity: 1,
+            duration: .2,
+            ease: 'power1.inOut',
+            transform: 'translateY(0)'
+        })
+
+
+        svgTL.fromTo(mask, {
+            outlineOffset: '20px',
+            backgroundColor: 'black',
+            border: '1px solid black'
+        }, {
+            outlineOffset: '10px',
+            backgroundColor: 'white',
+            border: '.5px solid black',
+            duration: .2,
+            ease: 'power1.inOut'
+        })
+        linkTL.fromTo(mask, {
+            height: '.3rem',
+            width: '.3rem',
+            outline: '1px solid black'
+        }, {
+            outline: '1px solid transparent',
+            backgroundColor: 'black',
+            height: '2rem',
+            width: '2rem',
+            duration: .2,
+            ease: 'power1.inOut',
+            opacity: '.6'
+        })
+        linkTL.pause()
+        cursorTL.pause()
+        svgTL.pause()
+        const video = document.querySelector('video')
+        video.addEventListener('mousemove', () => {
+            cursorTL.play()
+        })
+        video.addEventListener('mouseleave', () => {
+            cursorTL.reverse()
+        })
+
+
+
+
+
+
+
+
+        const navigationSVG = document.querySelector('.navigation__svg')
+        const navigationSVGLayer = document.querySelector('.navigation__svg-layer')
+
+
+
+        const svgContainer = document.querySelector('.svg-container')
+        const navigationLink = document.querySelectorAll('.navigation__link')
+        svgContainer.addEventListener('mousemove', (e) => {
+            svgTL.play()
+
+            gsap.to(navigationSVG, {
+                clipPath: `circle(15px at ${e.clientX - 20}% ${e.clientY + 15}%)`,
+                ease: 'power1.inOut',
+                duration: .05
+            })
+
+        })
+        svgContainer.addEventListener('mouseleave', (e) => {
+            svgTL.reverse()
+            gsap.to(navigationSVG, {
+                clipPath: `circle(0px at ${e.clientX}% ${e.clientY}%)`,
+                ease: 'power1.inOut',
+                duration: .05
+            })
+        })
+
+        navigationLink.forEach(link => {
+            link.addEventListener('mousemove', (e) => {
+                linkTL.play()
+            })
+            link.addEventListener('mouseleave', (e) => {
+                linkTL.reverse()
+
+            })
+        })
+
+        const buttonCreate = (container, top, layer, offsetX = 1 / 2, offsetY = 2) => {
+            const buttonContainer = document.querySelector(container)
+            const buttonTop = document.querySelector(top)
+            const buttonLayer = document.querySelector(layer)
+            buttonContainer.addEventListener('mousemove', (e) => {
+                svgTL.play()
+                gsap.to(buttonLayer, {
+                    clipPath: `circle(15px at ${(e.clientX - buttonContainer.getBoundingClientRect().x) * offsetX}% ${(e.clientY - buttonContainer.getBoundingClientRect().y) * offsetY}%)`,
+                    ease: 'power1.inOut',
+                    duration: .05
+                })
+            })
+            buttonContainer.addEventListener('mouseleave', (e) => {
+                svgTL.reverse()
+                gsap.to(buttonLayer, {
+                    clipPath: `circle(0px at ${(e.clientX - buttonContainer.getBoundingClientRect().x) * offsetX}% ${(e.clientY - buttonContainer.getBoundingClientRect().y) * offsetY}%)`,
+                    ease: 'power1.inOut',
+                    duration: .05
+                })
+            })
+        }
+        buttonCreate('.navigation__button-container', '.navigation__button-top', '.navigation__button-layer')
+        buttonCreate('.second__gym-button-container', '.gym__button-top', '.gym__button-layer')
+
+
+        const navigation = document.querySelector('.navigation')
+        const navTL = gsap.timeline({ default: { ease: 'power4.out', duration: .1 } })
+        navTL.to(navigation, {
+            yPercent: -100,
+            ease: 'power1.inOut',
+            duration: .5
+        })
+        navTL.pause()
+
+        // Initialize a variable to store the last scroll position
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function () {
+            // Get the current scroll position
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Determine the scroll direction
+            if (scrollTop > lastScrollTop) {
+                navTL.play()
+            } else {
+                navTL.reverse()
+            }
+
+            // Update the last scroll position to the current position
+            lastScrollTop = scrollTop;
+        });
+
+
+        //main__button-container > main__button, main__button-layer
+        const mainButonContainer = document.querySelector('.main__button-container')
+        const mainButton = document.querySelector('.main__button')
+        const mainButtonLayer = document.querySelector('.main__button-layer')
+
+        mainButonContainer.addEventListener('mousemove', (e) => {
+            svgTL.play()
+
+            gsap.to(mainButtonLayer, {
+                clipPath: `circle(15px at ${(e.clientX - mainButonContainer.getBoundingClientRect().x) / 1}% ${(e.clientY - mainButonContainer.getBoundingClientRect().y) * 2}%)`,
+                ease: 'power1.inOut',
+                duration: .05
+            })
+        })
+        mainButonContainer.addEventListener('mouseleave', (e) => {
+            svgTL.reverse()
+
+            gsap.to(mainButtonLayer, {
+                clipPath: `circle(0px at ${e.clientX}% ${e.clientY}%)`,
+                ease: 'power1.inOut',
+                duration: .05
+            })
+        })
+
+    </script>
+    <script>
+        const secondHeader = new SplitType('.second__header')
+        const secondEmphasis = new SplitType('.second__emphasis')
+        const secondGym = document.querySelector('.second__gym')
+        const secondGymContainer = document.querySelector('.second__gym-container')
+        const secondHeaderTL = gsap.timeline({
+            defaults: { ease: 'power4.inOut' },
+            scrollTrigger: {
+                trigger: '.second',
+                start: 'top 50%',
+                end: '150% 120%',
+                scrub: 2,
+                toggleActions: 'play play none reverse'
+            }
+        })
+        const secondGymTL = gsap.timeline({
+            defaults: { ease: 'power4.inOut' },
+            scrollTrigger: {
+                trigger: '.second',
+                start: '10% 30%',
+                end: 'bottom 30%',
+                scrub: 1,
+                toggleActions: 'play none play none',
+
+            }
+        })
+        gsap.set('.second__header', {
+            autoAlpha: 1, y: 40,
+            opacity: 0,
+            duration: 1,
+            stagger: .01
+        })
+
+        secondHeaderTL
+            .from(secondHeader.chars, {
+                y: 40,
+                opacity: 0,
+                duration: 3,
+                stagger: .02,
+                ease: 'power4.inOut',
+                scrub: .5
+            })
+            .to(secondHeader.chars, {
+                y: 0,
+                opacity: 1,
+                duration: 3,
+                stagger: .02,
+                ease: 'power4.inOut'
+            })
+
+        secondGymTL.to(secondGym, {
+            transform: 'translateY(0)',
+            ease: 'power4.inOut',
+            duration: 2
+        })
+    </script>
+    <script>
+        const thirdCard = gsap.utils.toArray('.third__card .third__card-inner')
+        const thirdScroller = document.querySelector('.third-scroller')
+
+        let scrollTween = gsap.to(thirdCard, {
+            xPercent: -58 * (thirdCard.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".third-scroller",
+                scrub: 1,
+                start: '10% 10%',
+                pin: '.third',
+                // markers: true,
+                // base vertical scrolling on how wide the container is so it feels more natural.
+                end: () => "+=" + document.querySelector(".third-scroller").offsetWidth
+            }
+        })
+    </script>
+    <script>
+        const thirdCardInner = document.querySelectorAll('.third__card-inner')
+        thirdCardInner.forEach(card => {
+            card.addEventListener('mousemove', () => {
+                cursorTL.play()
+            })
+            card.addEventListener('mouseleave', () => {
+                cursorTL.reverse()
+            })
+        })
+
+        function slowScrollToTop(duration) {
+            const scrollHeight = window.scrollY, // Current vertical position of the scroll bar
+                scrollStep = Math.PI / (duration / 15), // Calculate the scroll step
+                cosParameter = scrollHeight / 2;
+            var scrollCount = 0,
+                scrollMargin,
+                scrollInterval = setInterval(function () {
+                    if (window.scrollY !== 0) {
+                        scrollCount = scrollCount + 1;
+                        scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep);
+                        window.scrollTo(0, (scrollHeight - scrollMargin));
+                    }
+                    else clearInterval(scrollInterval);
+                }, 15);
+        }
+
+        // Call this function with the duration in milliseconds
+        // Example: slowScrollToTop(2000) for a 2-second scroll to the top
+        const triggerScroll = document.querySelector('.trigger-scroll')
+        triggerScroll.addEventListener('click', () => {
+            slowScrollToTop(12000);
+        })
+
+
+
+    </script>
+</body>
+
+</html>
